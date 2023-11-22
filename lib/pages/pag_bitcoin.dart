@@ -24,10 +24,6 @@ class _HomePageBitcoinState extends State<HomePageBitcoin> {
     });
   }
 
-  /*Future _recuperandoDados() {
-    return Future.delayed(Duration(seconds: 1), () => _recuperandoDados());
-  } */
-
   void _zerarValor() {
     setState(() {
       _preco = '0';
@@ -44,7 +40,7 @@ class _HomePageBitcoinState extends State<HomePageBitcoin> {
           children: [
             Image.asset('assets/bitcoin.png'),
             Padding(
-              padding: const EdgeInsets.only(top: 40, bottom: 40),
+              padding: const EdgeInsets.only(top: 70, bottom: 70),
               child: Text(
                 'R\$ $_preco',
                 style: const TextStyle(fontSize: 30),
@@ -60,7 +56,10 @@ class _HomePageBitcoinState extends State<HomePageBitcoin> {
                       padding: const EdgeInsets.fromLTRB(30, 15, 30, 15)),
                   child: const Text(
                     'Atualizar',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
                   ),
                 ),
                 ElevatedButton(
@@ -70,7 +69,10 @@ class _HomePageBitcoinState extends State<HomePageBitcoin> {
                       padding: const EdgeInsets.fromLTRB(30, 15, 30, 15)),
                   child: const Text(
                     'Zerar',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
                   ),
                 ),
               ],
